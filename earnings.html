@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <meta charset="UTF-8" />
+  <title>Earnings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      padding-bottom: 80px;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .earnings-box {
+      margin: 20px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .earning-item {
+      margin-bottom: 15px;
+    }
+    .earning-item span {
+      font-weight: bold;
+    }
+    .total {
+      font-size: 20px;
+      color: green;
+    }
+    .nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+      border-top: 1px solid #ccc;
+    }
+    .nav-bar a {
+      text-decoration: none;
+      color: #888;
+      font-size: 20px;
+    }
+    .nav-bar a.active {
+      color: #00b300;
+    }
+  </style>
+</head>
+<body>
+  <h2>Your Earnings</h2>
+  <div class="earnings-box">
+    <div class="earning-item">Ad Earnings: <span>$10.00</span></div>
+    <div class="earning-item">Invite Earnings (5%): <span>$3.00</span></div>
+    <div class="earning-item">VIP Bonus: <span>$5.00</span></div>
+    <hr>
+    <div class="earning-item total">Total Earnings: <span>$18.00</span></div>
+  </div>
+
+  <div class="nav-bar">
+    <a href="home.html"> </a>
+    <a href="dashboard.html"></a>
+    <a href="vip.html"></a>
+    <a href="earnings.html" class="active"></a>
+    <a href="settings.html"> </a>
+  </div>
+</body>
+</html>
