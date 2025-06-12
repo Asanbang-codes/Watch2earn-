@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch2Earn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+      padding-bottom: 80px; /* Space for navbar */
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background: #e6f7ff;
+    }
+
+    .topbar div,
+    .login-button a {
+      background: #ccf2ff;
+      padding: 5px 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .progressbar {
+      background: #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 10px auto;
+      width: 90%;
+      position: relative;
+    }
+
+    .progress {
+      background: #007bff;
+      width: 30%;
+      height: 20px;
+    }
+
+    .progressbar span {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .ad-section {
+      margin: 20px auto;
+      max-width: 400px;
+    }
+
+    .ad-block {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      justify-content: space-between;
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .ad-block img {
+      width: 70px;
+      height: 70px;
+      background: #eee;
+      border-radius: 10px;
+    }
+
+    .ad-block button {
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #eee;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar div {
+      text-align: center;
+      flex: 1;
+    }
+
+    .navbar div.active {
+      background: #ffd700;
+      border-radius: 10px;
+    }
+
+    .navbar img {
+      width: 30px;
+      height: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="dashboard.html">Go to Dashboard</a>
+    <div>earnings</div>
+  </div>
+
+  <div class="login-button" style="text-align: center; margin-top: 10px;">
+    <a href="login.html">Log in</a>
+  </div>
+
+  <div class="container">
+    <h2>You're Welcome<br />Watch Ads To Earn</h2>
+
+    <div class="progressbar">
+      <div class="progress"></div>
+      <span>15/50 ad's</span>
+    </div>
+
+    <p>Daily bonus: $9<br />Watch 50 ads</p>
+
+    <div class="ad-section">
+      <div class="ad-block">
+        <img src="https://via.placeholder.com/70" alt="Video" />
+        <a href="watch-ads.html">
+          <button>Watch Ads</button>
+        </a>
+      </div>
+
+      <div class="ad-block">
+        <img src="https://via.placeholder.com/70" alt="Video" />
+        <button>Watch Now</button>
+      </div>
+
+      <div class="ad-block">
+        <img src="https://via.placeholder.com/70" alt="Video" />
+        <button>Watch Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="active">
+      <img src="https://img.icons8.com/ios-filled/50/home.png" alt="Home" />
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/tv.png" alt="Ads" />
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/crown.png" alt="VIP" />
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/wallet.png" alt="Wallet" />
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/user.png" alt="Profile" />
+    </div>
+  </div>
+
+</body>
+</html>

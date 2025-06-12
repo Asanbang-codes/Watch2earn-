@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initail-scale=1.0">
+  <title>Withdrawal History</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-bottom: 100px;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .settings-icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .container {
+      padding: 20px;
+    }
+    .history-item {
+      background-color: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .history-item span {
+      display: block;
+      margin: 3px 0;
+    }
+    .status {
+      font-weight: bold;
+    }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+    }
+    .bottom-nav a {
+      text-decoration: none;
+      color: #555;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Withdrawal History</h1>
+  <div class="settings-icon">⚙️</div>
+</header>
+
+<div class="container">
+  <div class="history-item">
+    <span><strong>Amount:</strong> $20.00</span>
+    <span><strong>Date:</strong> May 26, 2025</span>
+    <span class="status" style="color: green;">Status: Completed</span>
+  </div>
+
+  <div class="history-item">
+    <span><strong>Amount:</strong> $15.00</span>
+    <span><strong>Date:</strong> May 10, 2025</span>
+    <span class="status" style="color: orange;">Status: Pending</span>
+  </div>
+
+  <div class="history-item">
+    <span><strong>Amount:</strong> $10.00</span>
+    <span><strong>Date:</strong> April 22, 2025</span>
+    <span class="status" style="color: red;">Status: Rejected</span>
+  </div>
+</div>
+
+<div class="bottom-nav">
+  <a href="watch-ads.html"> </a>
+  <a href="dashboard.html"></a>
+  <a href="vip.html"></a>
+  <a href="profile.html"></a>
+  <a href="withdraw.html"> </a>
+</div>
+
+</body>
+</html>

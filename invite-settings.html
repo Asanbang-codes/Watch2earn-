@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Referral & Settings Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    h2 {
+      color: #222;
+    }
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .share-buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+    .success-box {
+      background: #d4edda;
+      color: #155724;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    input[type=text] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>  <div class="section">
+    <h2>Invite Friends & Earn More</h2>
+    <p>Share your referral link to earn 5% from your friend's earnings!</p>
+    <label>Your Invite Link:</label>
+    <input type="text" value="https://yourapp.com/invite?user=YourUsername" readonly>
+    <div class="share-buttons">
+      <button onclick="share('whatsapp')">WhatsApp</button>
+      <button onclick="share('facebook')">Facebook</button>
+      <button onclick="share('email')">Email</button>
+      <button onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>  <div class="section">
+    <h2>Why Invite?</h2>
+    <p>✅ Invite 100 friends = Up to $1,000 in referral rewards!</p>
+    <p>✅ Build your team and unlock bonuses.</p>
+    <p>✅ VIP users get 10% referral bonus.</p>
+  </div>  <div class="section">
+    <h2>Last Withdrawal</h2>
+    <div class="success-box">
+      <p><strong>Amount:</strong> $20.00</p>
+      <p><strong>Date:</strong> June 8, 2025</p>
+      <p><strong>Status:</strong> ✅ Successful</p>
+    </div>
+  </div>  <div class="section">
+    <h2>Settings Preferences</h2>
+    <div class="toggle">
+      <span>Dark Mode</span>
+      <input type="checkbox" onclick="toggleTheme()">
+    </div>
+    <div class="toggle">
+      <span>Notifications</span>
+      <input type="checkbox">
+    </div>
+    <div class="toggle">
+      <span>Manage Account</span>
+      <button onclick="alert('Coming soon')">Open</button>
+    </div>
+  </div>  <script>
+    function share(platform) {
+      alert('Sharing to ' + platform + '... (functionality to be added)');
+    }
+    function copyLink() {
+      navigator.clipboard.writeText("https://yourapp.com/invite?user=YourUsername");
+      alert("Link copied to clipboard!");
+    }
+    function toggleTheme() {
+      alert("Theme switching will be added in future");
+    }
+  </script></body>
+</html>

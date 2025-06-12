@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Watch Ads - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header {
+      padding: 15px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-weight: bold;
+    }
+    .settings {
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    .cash-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .cash-box h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+    .cash-box p {
+      color: green;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .timer {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #333;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .buttons button {
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .watch-btn {
+      background: #007bff;
+      color: #fff;
+    }
+    .vip-btn {
+      background: gold;
+      color: #000;
+    }
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      background: #fff;
+      padding: 10px 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    .bottom-nav a {
+      text-align: center;
+      flex: 1;
+      padding: 10px;
+      text-decoration: none;
+      color: #999;
+      font-weight: bold;
+    }
+    .bottom-nav a.active {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">👁️ Watch Ads</div>
+    <div class="settings" onclick="window.location.href='settings.html'">⚙️</div>
+  </header>
+
+  <div class="content">
+    <div class="cash-box">
+      <h2>Today's Earnings</h2>
+      <p>$1.20</p>
+    </div>
+
+    <div class="timer">
+      ⏱️ Time left: <strong>5h 20m</strong> to complete daily goal
+    </div>
+
+
+        <div class="buttons">
+          <button class="watch-btn" onclick="alert('Start Watching Ads!')">▶️ Watch More Ads</button>
+          <button class="vip-btn" onclick="window.location.href='vip.html'">💎 Upgrade to VIP</button>
+        </div>
+      </div>
+
+      <div class="bottom-nav">
+        <a href="watch-ads.html" class="active">🏠 Home</a>
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="vip.html">💎 VIP</a>
+        <a href="profile.html">👤 Profile</a>
+        <a href="withdraw.html">💼 Wallet</a>
+      </div>
+
+    </body>
+    </html>
+
